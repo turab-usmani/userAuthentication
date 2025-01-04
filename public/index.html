@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Authentication </title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    
+    
+  </head>
+
+  <style>
+    .form-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .form-group label {
+        margin-right: 10px; /* Adjust space between label and input */
+    }
+</style>
+
+  <h1 style="text-align: center;"> User Authentication</h1>
+  <body>
+    <form action = "/" method="POST">
+    <div class="container" style="text-align: center;"> 
+      <div class="form-group">
+          <label for="username">Username</label>
+          <input class="form-control" type="text" id="username" name="username" placeholder="Enter your username:">
+      </div>
+      <div class="form-group">
+          <label for="password">Password</label>
+          <input class="form-control" type="password" id="password" name="password">
+      </div>
+
+      <button type="button" class="btn-primary" onclick="checkPasswordAuth()" > Login </button>
+      <button type="button" class="btn-primary" onclick="redirectToRegister()" > Register</button>
+      <script src="js/tool.js"></script>
+  </div>
+  </form>
+
+  </body>
+</html>
